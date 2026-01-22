@@ -88,18 +88,19 @@ The model aims to identify customers at risk of churning early enough to support
 
 ### 6.2 Classification Report and Confusion Matrix
 
-<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+<img src="/images/ConfusionMatrix.png" alt="Price vs Rating" width="800" />
 Model performance was evaluated using accuracy, precision, recall, F1-score, and a confusion matrix.
 While overall accuracy is high, recall for churned customers is prioritised due to class imbalance and the business importance of identifying at-risk user
 
 ### 6.3 ROC Curve Analysis
 
-<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+<img src="/images/ROC.png" alt="Price vs Rating" width="800" />
 The ROC curve was used to evaluate the model’s discrimination ability across different thresholds.
 The ROC-AUC score indicates good separation between churned and non-churned customers.
 
 ### 6.4 Feature Importance and Key Drivers of Churn
 
+<img src="/images/FeatureImportance.png" alt="Price vs Rating" width="800" />
 Feature importance was analysed using logistic regression coefficients.
 Customer tenure and contract type were identified as the strongest predictors of churn, with short tenure and month-to-month contracts significantly increasing churn risk.
 
