@@ -32,22 +32,31 @@ Before building the predictive model, exploratory data analysis was conducted to
 
 ### 4.1 Customer Churn Is Concentrated in the Early Stages of the Customer Lifecycle
 
-Churn rates are significantly higher among customers with short tenure, while long-tenure customers show much lower churn rates.
+<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+<p><b>Insight:</b> Churn rates are significantly higher among customers with short tenure, while long-tenure customers show much lower churn rates.
 This indicates that the risk of churn is highest shortly after customer onboarding.
+</p>
 
 ### 4.2 Month-to-Month Contracts Are Strongly Associated with Higher Churn
 
-Customers on month-to-month contracts exhibit substantially higher churn rates compared to those on one-year or two-year contracts.
+<img src="/images/ContractType.png" alt="Price vs Rating" width="800" />
+<p><b>Insight:</b>Customers on month-to-month contracts exhibit substantially higher churn rates compared to those on one-year or two-year contracts.
 Contract stability appears to be a key factor in retaining customers.
+</p>
 
 ### 4.3 Higher Monthly Charges Increase the Likelihood of Customer Churn
 
-Customers with higher monthly charges are more likely to churn, suggesting greater price sensitivity and potential dissatisfaction among high-paying customers.
+<img src="/images/MonthlyCharges.png" alt="Price vs Rating" width="800" />
+<p><b>Insight:</b>Customers with higher monthly charges are more likely to churn, suggesting greater price sensitivity and potential dissatisfaction among high-paying customers.
+</p>
 
 ### 4.4 "Fiber Optic Internet" Users Show Higher Churn Risk
 
-Churn rates are higher among customers using fiber optic internet services compared to other internet service types.
+<img src="/images/Fiberoptic.png" alt="Price vs Rating" width="800" />
+<p><b>Insight:</b>Churn rates are higher among customers using fiber optic internet services compared to other internet service types.
 This may reflect higher service expectations or unmet performance perceptions.
+
+</p>
 
 ### 4.5 Key EDA Insights Summary
 
