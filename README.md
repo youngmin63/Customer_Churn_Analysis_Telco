@@ -141,7 +141,7 @@ Higher monthly charges are associated with increased churn probability.
 Leverage churn probability scores to identify at-risk users early.
 → Trigger personalised retention campaigns before customers decide to leave.
 
-### 8.Final Thoughts
+### 8.Conclusion
 This project analyses customer churn in the telecommunications industry using exploratory data analysis and an interpretable machine learning model.
 Key drivers such as contract type, tenure, and pricing were identified, enabling early detection of at-risk customers.
 The results demonstrate how data-driven insights can support targeted and proactive retention strategies.
