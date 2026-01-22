@@ -97,7 +97,7 @@ While overall accuracy is high, recall for churned customers is prioritised due 
 
 ### 6.3 ROC Curve Analysis
 
-<img src="/images/ROC.png" alt="Price vs Rating" width="600" />
+<img src="/images/ROC.png" alt="Price vs Rating" width="400" />
 The ROC curve was used to evaluate the model’s discrimination ability across different thresholds.
 The ROC-AUC score indicates good separation between churned and non-churned customers.
 
@@ -116,3 +116,28 @@ Based on model predictions, customers with the following characteristics are mor
 - High monthly charges
 - Fiber optic internet service
 - These customers should be prioritised for targeted retention interventions.
+
+## 7. Strategic Recommendations
+
+Based on the exploratory analysis and churn prediction model, the following actions are recommended to reduce customer churn:
+
+### 7-1. Prioritise Month-to-Month Customers
+
+Customers on month-to-month contracts show significantly higher churn risk.
+→ Encourage long-term contracts through discounts, loyalty rewards, or bundled offers.
+
+### 7-2. Focus on Early-Stage Customers
+
+Short-tenure customers are more likely to churn.
+→ Implement early engagement strategies such as onboarding support and proactive check-ins during the first few months.
+
+### 7-3. Review Pricing for High-Charge Segments
+
+Higher monthly charges are associated with increased churn probability.
+→ Consider flexible pricing plans or targeted promotions for high-risk, high-charge customers.
+
+### 7-4. Use the Model for Proactive Retention
+
+Leverage churn probability scores to identify at-risk users early.
+→ Trigger personalised retention campaigns before customers decide to leave.
+
