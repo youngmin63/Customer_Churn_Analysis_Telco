@@ -8,7 +8,7 @@ The objective of this project is to identify the key factors that contribute to 
 
 ## 3. Dataset
 
-Source: Telco Customer Churn (IBM Sample Data Sets, Kaggle)
+Source: Telco Customer Churn (Kaggle)
 
 Key fields:
 
