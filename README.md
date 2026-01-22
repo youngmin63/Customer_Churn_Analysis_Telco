@@ -12,19 +12,13 @@ Source: Telco Customer Churn (IBM Sample Data Sets, Kaggle)
 
 Key fields:
 
-Churn – Whether a customer left the service within the last month
-
-Tenure – Length of time the customer has stayed with the company
-
-Contract type – Customer contract type (month-to-month, one year, two year)
-
-Monthly charges – Amount charged to the customer on a monthly basis
-
-Total charges – Total amount charged to the customer
-
-Internet service & add-on services – Internet service type, online security, backup, device protection, tech support, and streaming services
-
-Demographic information – Gender, partner status, and dependents
+- Churn – Whether a customer left the service within the last month
+- Tenure – Length of time the customer has stayed with the company
+- Contract type – Customer contract type (month-to-month, one year, two year)
+- Monthly charges – Amount charged to the customer on a monthly basis
+- Total charges – Total amount charged to the customer
+- Internet service & add-on services – Internet service type, online security, backup, device protection, tech support, and streaming services
+- Demographic information – Gender, partner status, and dependents
 
 ## 4. Exploratory Data Analysis (EDA)
 
@@ -32,14 +26,14 @@ Before building the predictive model, exploratory data analysis was conducted to
 
 ### 4.1 Customer Churn Is Concentrated in the Early Stages of the Customer Lifecycle
 
-<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+<img src="/images/Tenure.png" alt="Price vs Rating" width="600" />
 <p><b>Insight:</b> Churn rates are significantly higher among customers with short tenure, while long-tenure customers show much lower churn rates.
 This indicates that the risk of churn is highest shortly after customer onboarding.
 </p>
 
 ### 4.2 Month-to-Month Contracts Are Strongly Associated with Higher Churn
 
-<img src="/images/ContractType.png" alt="Price vs Rating" width="800" />
+<img src="/images/ContractType.png" alt="Price vs Rating" width="600" />
 <p><b>Insight:</b>Customers on month-to-month contracts exhibit substantially higher churn rates compared to those on one-year or two-year contracts.
 Contract stability appears to be a key factor in retaining customers.
 </p>
@@ -52,7 +46,7 @@ Contract stability appears to be a key factor in retaining customers.
 
 ### 4.4 "Fiber Optic Internet" Users Show Higher Churn Risk
 
-<img src="/images/Fiberoptic.png" alt="Price vs Rating" width="800" />
+<img src="/images/Fiberoptic.png" alt="Price vs Rating" width="600" />
 <p><b>Insight:</b>Churn rates are higher among customers using fiber optic internet services compared to other internet service types.
 This may reflect higher service expectations or unmet performance perceptions.
 
@@ -88,10 +82,16 @@ The model aims to identify customers at risk of churning early enough to support
 
 ### 6.2 Classification Report and Confusion Matrix
 
-<p align="center">
-  <img src="/images/ConfusionMatrix.png" alt="Confusion Matrix" width="450" />
-  <img src="/images/F1.png" alt="F1 Score" width="450" />
-</p>
+<table>
+  <tr>
+    <td valign="top">
+      <img src="/images/ConfusionMatrix.png" alt="Confusion Matrix" width="450"/>
+    </td>
+    <td valign="top">
+      <img src="/images/F1Score.png" alt="F1 Score" width="450"/>
+    </td>
+  </tr>
+</table>
 Model performance was evaluated using accuracy, precision, recall, F1-score, and a confusion matrix.
 While overall accuracy is high, recall for churned customers is prioritised due to class imbalance and the business importance of identifying at-risk user
 
