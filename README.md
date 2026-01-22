@@ -65,3 +65,50 @@ This may reflect higher service expectations or unmet performance perceptions.
 - Higher prices increase churn risk
 - Service type influence retention behaviour
 - These insights informed feature selection and modelling decisions in the subsequent stages.
+
+## 5. Data Preprocessing
+
+Data preprocessing was performed to ensure data quality and prepare the dataset for machine learning modelling.
+
+Key steps included:
+
+- Removing non-informative identifier columns (e.g. customerID)
+- Converting variables to appropriate data types and handling missing values
+- Encoding categorical variables using one-hot encoding
+- Scaling numerical features to ensure comparability
+- Splitting the dataset into training and test sets while preserving class distribution
+
+## 6. Churn Prediction Report
+Customer churn prediction was performed to identify high-risk customers and evaluate the model’s ability to distinguish between churned and retained users.
+
+### 6.1 Churn Prediction Model Overview
+
+A logistic regression model was trained using customer demographics, service usage, and contract information to predict customer churn.
+The model aims to identify customers at risk of churning early enough to support proactive retention strategies.
+
+### 6.2 Classification Report and Confusion Matrix
+
+<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+Model performance was evaluated using accuracy, precision, recall, F1-score, and a confusion matrix.
+While overall accuracy is high, recall for churned customers is prioritised due to class imbalance and the business importance of identifying at-risk user
+
+### 6.3 ROC Curve Analysis
+
+<img src="/images/Tenure.png" alt="Price vs Rating" width="800" />
+The ROC curve was used to evaluate the model’s discrimination ability across different thresholds.
+The ROC-AUC score indicates good separation between churned and non-churned customers.
+
+### 6.4 Feature Importance and Key Drivers of Churn
+
+Feature importance was analysed using logistic regression coefficients.
+Customer tenure and contract type were identified as the strongest predictors of churn, with short tenure and month-to-month contracts significantly increasing churn risk.
+
+### 6.5 High-Risk Customer Profile
+
+Based on model predictions, customers with the following characteristics are more likely to churn:
+
+- Short tenure
+- Month-to-month contracts
+- High monthly charges
+- Fiber optic internet service
+- These customers should be prioritised for targeted retention interventions.
