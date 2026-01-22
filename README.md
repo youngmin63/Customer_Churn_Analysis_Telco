@@ -100,7 +100,7 @@ The ROC-AUC score indicates good separation between churned and non-churned cust
 
 ### 6.4 Feature Importance and Key Drivers of Churn
 
-<img src="/images/FeatureImportane.png" alt="Price vs Rating" width="800" />
+<img src="/images/FeatureImportance.png" alt="Price vs Rating" width="800" />
 Feature importance was analysed using logistic regression coefficients.
 Customer tenure and contract type were identified as the strongest predictors of churn, with short tenure and month-to-month contracts significantly increasing churn risk.
 
